@@ -1,6 +1,9 @@
 # R 언어 Hack Sheets
 
-_You **can** mastering R language_
+_You **can** mastering `R language`_
+
+`R`을 폭풍흡입 ![왜그랬데요](http://img.naver.net/static/www/mobile/edit/2016/0811/mobile_080743234455.jpg)
+
 
 ## 참고서적
 
