@@ -1,8 +1,8 @@
 # R 언어 Hack Sheets
 
-_You **can** mastering `R language`_
+_You **can** mastering `R` language_
 
-`R`을 폭풍흡입 ![왜그랬데요](http://cfile214.uf.daum.net/image/2430BA495358FBC81CDC4C)
+`R`을 폭풍흡입 ![왜그랬데요](http://i1.daumcdn.net/thumb/C160x90/?fname=http://i1.daumcdn.net/svc/image/U03/tvpot_thumb/v375566Y2gDYB1161y1DgE2/thumb.png)
 
 
 ## 참고서적
