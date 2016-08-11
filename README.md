@@ -9,7 +9,7 @@ _You **can** mastering R language_
 * [boxplot] (http://www.ats.ucla.edu/stat/r/gbe/boxplot.htm)
 * [scatter] (http://www.ats.ucla.edu/stat/r/gbe/scatter.htm)
 * [ggplot_boxplot] (http://www.ats.ucla.edu/stat/r/gbe/ggplot_boxplot.htm)
-* [line-and-scatter] https://plot.ly/r/line-and-scatter/
+* [line-and-scatter] (https://plot.ly/r/line-and-scatter/)
 * [iris_plots] (http://www2.warwick.ac.uk/fac/sci/moac/people/students/peter_cock/r/iris_plots/)
 * [Scatter plot, ggplot2] (http://www.sthda.com/english/wiki/ggplot2-scatter-plots-quick-start-guide-r-software-and-data-visualization )
 * [histogram, ggplot2] (http://www.r-bloggers.com/how-to-make-a-histogram-with-ggplot2/)
