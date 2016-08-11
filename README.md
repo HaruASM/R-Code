@@ -1,5 +1,6 @@
-# R-Code
-# 열심히 열심히!!
+# R 언어 hack sheet
+
+## Inatallation
 
 ## 참고서적
 
@@ -30,19 +31,19 @@ https://www.youtube.com/watch?v=rqrrTfy-z-c
 ## R언어 문법
 
 ### 산점도
-```
+```R
 plot(read, write)
 names(hsb2)
 cor(read, write)
 ```
 ###
-```r
+```R
 plot(math, write)
 abline(lsfit(write, math))
 ```
 
 ###alternatively
-```
+```R
 plot(math, write)
 fit<-lm(write ~ math)
 abline(fit)
