@@ -26,7 +26,7 @@ _You **can** mastering `R` language_
 * data mining 소개[pdf](http://datamining.dongguk.ac.kr/R/R%EC%9D%98%EC%84%A4%EC%B9%98%EB%B0%8F%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95.pdf)
 
 ### Videos
-* 영상자료[영상]https://www.youtube.com/watch?v=rqrrTfy-z-c
+* 영상자료[영상] (https://www.youtube.com/watch?v=rqrrTfy-z-c)
 
 
 ## public dataset
