@@ -32,24 +32,28 @@ _You **can** mastering R language_
 * https://www.data.go.kr/#/L21haW4=
 * http://data.seoul.go.kr/
 
-### 스타벅스 매장 전략
- http://m.dongabiz.com/Business/Marketing/content.php?atno=1202054701&chap_no=1&sdkey=14424653996&user=dep#TOP
+## 활용사례
+* [스타벅스 매장 전략] (http://m.dongabiz.com/Business/Marketing/content.php?atno=1202054701&chap_no=1&sdkey=14424653996&user=dep#TOP)
 
-## R언어 문법
 
-### 산점도
+## R 언어 문법
+
+
+### Graph 이용
+
+#### 산점도
 ```R
 plot(read, write)
 names(hsb2)
 cor(read, write)
 ```
-###
+####
 ```R
 plot(math, write)
 abline(lsfit(write, math))
 ```
 
-###alternatively
+#### alternatively
 ```R
 plot(math, write)
 fit<-lm(write ~ math)
