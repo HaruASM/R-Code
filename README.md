@@ -2,7 +2,7 @@
 
 _You **can** mastering `R language`_
 
-`R`을 폭풍흡입 ![왜그랬데요](http://img.naver.net/static/www/mobile/edit/2016/0811/mobile_080743234455.jpg)
+`R`을 폭풍흡입 ![왜그랬데요](http://cfile214.uf.daum.net/image/2430BA495358FBC81CDC4C)
 
 
 ## 참고서적
