@@ -15,15 +15,16 @@ _You **can** mastering R language_
 * [histogram, ggplot2] (http://www.r-bloggers.com/how-to-make-a-histogram-with-ggplot2/)
 * [ggplot2](http://www.cookbook-r.com/Graphs/Plotting_distributions_(ggplot2)/)
 
-### Quick start guide
+### uick start guide of ggplot2
 * [여기](http://www.sthda.com/english/wiki/ggplot2-histogram-plot-quick-start-guide-r-software-and-data-visualization)
-* [](http://www.sthda.com/english/wiki/ggplot2-histogram-easy-histogram-graph-with-ggplot2-r-package)
+* [여기](http://www.sthda.com/english/wiki/ggplot2-histogram-easy-histogram-graph-with-ggplot2-r-package)
 
 ### Data Mining
 * data mining 소개[pdf](http://datamining.dongguk.ac.kr/R/R%EC%9D%98%EC%84%A4%EC%B9%98%EB%B0%8F%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95.pdf)
 
 ### Videos
 * 영상자료[영상]https://www.youtube.com/watch?v=rqrrTfy-z-c
+
 
 ## public dataset
 ### what to do
