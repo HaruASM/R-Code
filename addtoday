@@ -1,0 +1,141 @@
+##############################
+######### Example1############
+##############################
+chol <- read.table(url("http://assets.datacamp.com/blog_assets/chol.txt"), header = TRUE) 
+
+hist(AirPassengers) 
+
+hist(chol$AGE) - Read more at: http://scl.io/8rheox2R#gs.m5n7c28
+
+hist(AirPassengers,     main="Histogram for Air Passengers",     xlab="Passengers",     border="blue",     col="green",     xlim=c(100,700),     las=1,     breaks=5) 
+
+hist(AirPassengers, main="Histogram for Air Passengers")
+
+hist(AirPassengers, xlab="Passengers", ylab="Frequency of Passengers")
+
+hist(AirPassengers, border="blue", col="green") 
+
+hist(AirPassengers, xlim=c(100,700), ylim=c(0,30))
+
+hist(AirPassengers, las=1)
+
+hist(AirPassengers, breaks=5)
+
+hist(AirPassengers, breaks=c(100, 300, 500, 700)) 
+#Compute a histogram for the data values in AirPassengers, and set the bins such that they run from 100 to 300, 300 to 500 and 500 to 700. - Read more at: http://scl.io/8rheox2R#gs.m5n7c28
+
+hist(AirPassengers, breaks=c(100, seq(200,700, 150)))
+
+hist(AirPassengers,     main="Histogram for Air Passengers",     xlab="Passengers",     border="blue",     col="green",     xlim=c(100,700),     las=1,     breaks=5,     prob = TRUE) 
+lines(density(AirPassengers))
+
+
+
+##############################
+######### Example2############
+##############################
+
+
+library(MASS)
+
+# import data
+data(mtcars)
+
+# Simple Histogram
+hist(mtcars$mpg)
+
+# Colored Histogram with Different Number of Bins
+hist(mtcars$mpg, breaks=12, col="red")
+
+# Add a Normal Curve (Thanks to Peter Dalgaard)
+x <- mtcars$mpg 
+h<-hist(x, breaks=10, col="red", xlab="Miles Per Gallon", 
+  	main="Histogram with Normal Curve") 
+xfit<-seq(min(x),max(x),length=40) 
+yfit<-dnorm(xfit,mean=mean(x),sd=sd(x)) 
+yfit <- yfit*diff(h$mids[1:2])*length(x) 
+lines(xfit, yfit, col="blue", lwd=2)
+
+# Kernel Density Plot
+d <- density(mtcars$mpg) # returns the density data 
+plot(d) # plots the results
+
+# Filled Density Plot
+d <- density(mtcars$mpg)
+plot(d, main="Kernel Density of Miles Per Gallon")
+polygon(d, col="red", border="blue")
+
+# Compare MPG distributions for cars with 
+# 4,6, or 8 cylinders
+library(sm)
+attach(mtcars)
+
+# create value labels 
+cyl.f <- factor(cyl, levels= c(4,6,8),
+  labels = c("4 cylinder", "6 cylinder", "8 cylinder")) 
+
+# plot densities 
+sm.density.compare(mpg, cyl, xlab="Miles Per Gallon")
+title(main="MPG Distribution by Car Cylinders")
+
+# add legend via mouse click
+colfill<-c(2:(2+length(levels(cyl.f)))) 
+legend(locator(1), levels(cyl.f), fill=colfill)
+
+##############################
+######### Example3############
+##############################
+
+crime <- read.csv("http://datasets.flowingdata.com/crimeRatesByState-formatted.csv")
+crime
+
+# Remove Washington, D.C.
+crime.new <- crime[crime$state != "District of Columbia",]
+
+# Remove national averages
+crime.new <- crime.new[crime.new$state != "United States ",]
+
+# Box plot
+boxplot(crime.new$robbery, horizontal=TRUE, main="Robbery Rates in US")
+
+# Box plots for all crime rates
+boxplot(crime.new[,-1], horizontal=TRUE, main="Crime Rates in US")
+
+# Histogram
+hist(crime.new$robbery, breaks=10)
+
+# Multiple histograms
+par(mfrow=c(3, 3))
+colnames <- dimnames(crime.new)[[2]]
+for (i in 2:8) {
+hist(crime[,i], xlim=c(0, 3500), breaks=seq(0, 3500, 100), main=colnames[i], probability=TRUE, col="gray", border="white")
+}
+
+# Density plot
+par(mfrow=c(3, 3))
+colnames <- dimnames(crime.new)[[2]]
+for (i in 2:8) {
+d <- density(crime[,i])
+plot(d, type="n", main=colnames[i])
+polygon(d, col="red", border="gray")
+}
+
+# Histograms and density lines
+par(mfrow=c(3, 3))
+colnames <- dimnames(crime.new)[[2]]
+for (i in 2:8) {
+hist(crime[,i], xlim=c(0, 3500), breaks=seq(0, 3500, 100), main=colnames[i], probability=TRUE, col="gray", border="white")
+d <- density(crime[,i])
+lines(d, col="red")
+}
+
+##############################
+######### Example4############
+##############################
+
+install.packages("sm")
+library(sm)
+data(iris)
+
+sm.density.compare(iris$Sepal.Length, iris$Species, xlab="Species")
+title(main="Distributions of Species")
