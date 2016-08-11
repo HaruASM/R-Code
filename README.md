@@ -21,9 +21,29 @@ https://www.youtube.com/watch?v=rqrrTfy-z-c
 
 ## public dataset
 ###인터넷으로 구할 수 있는 빅데이터용 자료들
-what to do : https://www.data.go.kr/#/L21haW4=
-what to do : http://data.seoul.go.kr/
+ what to do : https://www.data.go.kr/#/L21haW4=
+ what to do : http://data.seoul.go.kr/
+
+### 스타벅스 매장 전략
+ http://m.dongabiz.com/Business/Marketing/content.php?atno=1202054701&chap_no=1&sdkey=14424653996&user=dep#TOP
 
 ## R언어 문법
 
-# 
+### 산점도
+```
+plot(read, write)
+names(hsb2)
+cor(read, write)
+```
+###
+```r
+plot(math, write)
+abline(lsfit(write, math))
+```
+
+###alternatively
+```
+plot(math, write)
+fit<-lm(write ~ math)
+abline(fit)
+```
